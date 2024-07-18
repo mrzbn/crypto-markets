@@ -7,12 +7,17 @@ class MarketListItemModel {
   final PriceModel primaryPrice;
   final PriceModel secondaryPrice;
   final double changePercentage;
+  final bool isFavorite;
+  final bool isFavorable;
 
-  MarketListItemModel(
-      {required this.iconUrl,
-      required this.primaryName,
-      required this.secondaryName,
-      required this.primaryPrice,
-      required this.secondaryPrice,
-      required this.changePercentage});
+  MarketListItemModel({
+    required this.iconUrl,
+    required this.primaryName,
+    required this.secondaryName,
+    required this.primaryPrice,
+    required this.secondaryPrice,
+    required this.changePercentage,
+    required this.isFavorite,
+    required this.isFavorable,
+  });
 }
