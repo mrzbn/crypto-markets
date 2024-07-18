@@ -89,3 +89,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Farsi
+      fonts:
+        - asset: assets/fonts/font_regular_fa.ttf
+          weight: 400
+        - asset: assets/fonts/font_medium_fa.ttf
+          weight: 500
+        - asset: assets/fonts/font_bold_fa.ttf
+          weight: 700
