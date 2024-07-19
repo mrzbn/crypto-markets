@@ -9,6 +9,7 @@ class MarketListItemModel {
   final double changePercentage;
   final bool isFavorite;
   final bool isFavorable;
+  final double margin;
 
   MarketListItemModel({
     required this.iconUrl,
@@ -19,5 +20,6 @@ class MarketListItemModel {
     required this.changePercentage,
     required this.isFavorite,
     required this.isFavorable,
+    required this.margin,
   });
 }
