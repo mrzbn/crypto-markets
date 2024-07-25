@@ -2,7 +2,6 @@ import 'package:crypto_markets/shared/price_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'market_list_item_ui_model.freezed.dart';
-part 'market_list_item_ui_model.g.dart';
 
 @freezed
 class MarketListItemUiModel with _$MarketListItemUiModel {
@@ -17,7 +16,4 @@ class MarketListItemUiModel with _$MarketListItemUiModel {
     required bool isFavorable,
     required double margin,
   }) = _MarketListItemUiModel;
-
-  factory MarketListItemUiModel.fromJson(Map<String, Object?> json) =>
-      _$MarketListItemUiModelFromJson(json);
 }
