@@ -21,25 +21,29 @@ MarketApiModel _$MarketApiModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$MarketApiModel {
   int get id => throw _privateConstructorUsedError;
-
   String get symbol => throw _privateConstructorUsedError;
-
+  @JsonKey(name: 'name_fa')
   String get nameFa => throw _privateConstructorUsedError;
 
+  @JsonKey(name: 'price_precision')
   int get pricePrecision => throw _privateConstructorUsedError;
 
+  @JsonKey(name: 'first_currency_precision')
   int get firstCurrencyPrecision => throw _privateConstructorUsedError;
 
   String get price => throw _privateConstructorUsedError;
 
+  @JsonKey(name: 'change_percent')
   String get changePercent => throw _privateConstructorUsedError;
 
   String get volume => throw _privateConstructorUsedError;
 
+  @JsonKey(name: 'usdt_volume')
   String get usdtVolume => throw _privateConstructorUsedError;
 
-  String get leverage => throw _privateConstructorUsedError;
+  Object get leverage => throw _privateConstructorUsedError;
 
+  @JsonKey(name: 'spot_grid_bot_active')
   bool get spotGridBotActive => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -59,15 +63,15 @@ abstract class $MarketApiModelCopyWith<$Res> {
   $Res call(
       {int id,
       String symbol,
-      String nameFa,
-      int pricePrecision,
-      int firstCurrencyPrecision,
+      @JsonKey(name: 'name_fa') String nameFa,
+      @JsonKey(name: 'price_precision') int pricePrecision,
+      @JsonKey(name: 'first_currency_precision') int firstCurrencyPrecision,
       String price,
-      String changePercent,
+      @JsonKey(name: 'change_percent') String changePercent,
       String volume,
-      String usdtVolume,
-      String leverage,
-      bool spotGridBotActive});
+      @JsonKey(name: 'usdt_volume') String usdtVolume,
+      Object leverage,
+      @JsonKey(name: 'spot_grid_bot_active') bool spotGridBotActive});
 }
 
 /// @nodoc
@@ -77,7 +81,6 @@ class _$MarketApiModelCopyWithImpl<$Res, $Val extends MarketApiModel>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -133,10 +136,7 @@ class _$MarketApiModelCopyWithImpl<$Res, $Val extends MarketApiModel>
           ? _value.usdtVolume
           : usdtVolume // ignore: cast_nullable_to_non_nullable
               as String,
-      leverage: null == leverage
-          ? _value.leverage
-          : leverage // ignore: cast_nullable_to_non_nullable
-              as String,
+      leverage: null == leverage ? _value.leverage : leverage,
       spotGridBotActive: null == spotGridBotActive
           ? _value.spotGridBotActive
           : spotGridBotActive // ignore: cast_nullable_to_non_nullable
@@ -151,21 +151,20 @@ abstract class _$$MarketApiModelImplCopyWith<$Res>
   factory _$$MarketApiModelImplCopyWith(_$MarketApiModelImpl value,
           $Res Function(_$MarketApiModelImpl) then) =
       __$$MarketApiModelImplCopyWithImpl<$Res>;
-
   @override
   @useResult
   $Res call(
       {int id,
       String symbol,
-      String nameFa,
-      int pricePrecision,
-      int firstCurrencyPrecision,
+      @JsonKey(name: 'name_fa') String nameFa,
+      @JsonKey(name: 'price_precision') int pricePrecision,
+      @JsonKey(name: 'first_currency_precision') int firstCurrencyPrecision,
       String price,
-      String changePercent,
+      @JsonKey(name: 'change_percent') String changePercent,
       String volume,
-      String usdtVolume,
-      String leverage,
-      bool spotGridBotActive});
+      @JsonKey(name: 'usdt_volume') String usdtVolume,
+      Object leverage,
+      @JsonKey(name: 'spot_grid_bot_active') bool spotGridBotActive});
 }
 
 /// @nodoc
@@ -228,10 +227,7 @@ class __$$MarketApiModelImplCopyWithImpl<$Res>
           ? _value.usdtVolume
           : usdtVolume // ignore: cast_nullable_to_non_nullable
               as String,
-      leverage: null == leverage
-          ? _value.leverage
-          : leverage // ignore: cast_nullable_to_non_nullable
-              as String,
+      leverage: null == leverage ? _value.leverage : leverage,
       spotGridBotActive: null == spotGridBotActive
           ? _value.spotGridBotActive
           : spotGridBotActive // ignore: cast_nullable_to_non_nullable
@@ -246,15 +242,16 @@ class _$MarketApiModelImpl implements _MarketApiModel {
   const _$MarketApiModelImpl(
       {required this.id,
       required this.symbol,
-      required this.nameFa,
-      required this.pricePrecision,
+      @JsonKey(name: 'name_fa') required this.nameFa,
+      @JsonKey(name: 'price_precision') required this.pricePrecision,
+      @JsonKey(name: 'first_currency_precision')
       required this.firstCurrencyPrecision,
       required this.price,
-      required this.changePercent,
+      @JsonKey(name: 'change_percent') required this.changePercent,
       required this.volume,
-      required this.usdtVolume,
+      @JsonKey(name: 'usdt_volume') required this.usdtVolume,
       required this.leverage,
-      required this.spotGridBotActive});
+      @JsonKey(name: 'spot_grid_bot_active') required this.spotGridBotActive});
 
   factory _$MarketApiModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$MarketApiModelImplFromJson(json);
@@ -264,22 +261,28 @@ class _$MarketApiModelImpl implements _MarketApiModel {
   @override
   final String symbol;
   @override
+  @JsonKey(name: 'name_fa')
   final String nameFa;
   @override
+  @JsonKey(name: 'price_precision')
   final int pricePrecision;
   @override
+  @JsonKey(name: 'first_currency_precision')
   final int firstCurrencyPrecision;
   @override
   final String price;
   @override
+  @JsonKey(name: 'change_percent')
   final String changePercent;
   @override
   final String volume;
   @override
+  @JsonKey(name: 'usdt_volume')
   final String usdtVolume;
   @override
-  final String leverage;
+  final Object leverage;
   @override
+  @JsonKey(name: 'spot_grid_bot_active')
   final bool spotGridBotActive;
 
   @override
@@ -305,8 +308,7 @@ class _$MarketApiModelImpl implements _MarketApiModel {
             (identical(other.volume, volume) || other.volume == volume) &&
             (identical(other.usdtVolume, usdtVolume) ||
                 other.usdtVolume == usdtVolume) &&
-            (identical(other.leverage, leverage) ||
-                other.leverage == leverage) &&
+            const DeepCollectionEquality().equals(other.leverage, leverage) &&
             (identical(other.spotGridBotActive, spotGridBotActive) ||
                 other.spotGridBotActive == spotGridBotActive));
   }
@@ -324,7 +326,7 @@ class _$MarketApiModelImpl implements _MarketApiModel {
       changePercent,
       volume,
       usdtVolume,
-      leverage,
+      const DeepCollectionEquality().hash(leverage),
       spotGridBotActive);
 
   @JsonKey(ignore: true)
@@ -346,14 +348,16 @@ abstract class _MarketApiModel implements MarketApiModel {
   const factory _MarketApiModel(
       {required final int id,
       required final String symbol,
-      required final String nameFa,
-      required final int pricePrecision,
+      @JsonKey(name: 'name_fa') required final String nameFa,
+      @JsonKey(name: 'price_precision') required final int pricePrecision,
+      @JsonKey(name: 'first_currency_precision')
       required final int firstCurrencyPrecision,
       required final String price,
-      required final String changePercent,
+      @JsonKey(name: 'change_percent') required final String changePercent,
       required final String volume,
-      required final String usdtVolume,
-      required final String leverage,
+      @JsonKey(name: 'usdt_volume') required final String usdtVolume,
+      required final Object leverage,
+      @JsonKey(name: 'spot_grid_bot_active')
       required final bool spotGridBotActive}) = _$MarketApiModelImpl;
 
   factory _MarketApiModel.fromJson(Map<String, dynamic> json) =
@@ -361,37 +365,39 @@ abstract class _MarketApiModel implements MarketApiModel {
 
   @override
   int get id;
-
   @override
   String get symbol;
 
   @override
+  @JsonKey(name: 'name_fa')
   String get nameFa;
 
   @override
+  @JsonKey(name: 'price_precision')
   int get pricePrecision;
 
   @override
+  @JsonKey(name: 'first_currency_precision')
   int get firstCurrencyPrecision;
-
   @override
   String get price;
 
   @override
+  @JsonKey(name: 'change_percent')
   String get changePercent;
-
   @override
   String get volume;
 
   @override
+  @JsonKey(name: 'usdt_volume')
   String get usdtVolume;
 
   @override
-  String get leverage;
+  Object get leverage;
 
   @override
+  @JsonKey(name: 'spot_grid_bot_active')
   bool get spotGridBotActive;
-
   @override
   @JsonKey(ignore: true)
   _$$MarketApiModelImplCopyWith<_$MarketApiModelImpl> get copyWith =>

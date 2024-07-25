@@ -10,15 +10,15 @@ _$MarketApiModelImpl _$$MarketApiModelImplFromJson(Map<String, dynamic> json) =>
     _$MarketApiModelImpl(
       id: (json['id'] as num).toInt(),
       symbol: json['symbol'] as String,
-      nameFa: json['nameFa'] as String,
-      pricePrecision: (json['pricePrecision'] as num).toInt(),
-      firstCurrencyPrecision: (json['firstCurrencyPrecision'] as num).toInt(),
+      nameFa: json['name_fa'] as String,
+      pricePrecision: (json['price_precision'] as num).toInt(),
+      firstCurrencyPrecision: (json['first_currency_precision'] as num).toInt(),
       price: json['price'] as String,
-      changePercent: json['changePercent'] as String,
+      changePercent: json['change_percent'] as String,
       volume: json['volume'] as String,
-      usdtVolume: json['usdtVolume'] as String,
-      leverage: json['leverage'] as String,
-      spotGridBotActive: json['spotGridBotActive'] as bool,
+      usdtVolume: json['usdt_volume'] as String,
+      leverage: json['leverage'] as Object,
+      spotGridBotActive: json['spot_grid_bot_active'] as bool,
     );
 
 Map<String, dynamic> _$$MarketApiModelImplToJson(
@@ -26,13 +26,13 @@ Map<String, dynamic> _$$MarketApiModelImplToJson(
     <String, dynamic>{
       'id': instance.id,
       'symbol': instance.symbol,
-      'nameFa': instance.nameFa,
-      'pricePrecision': instance.pricePrecision,
-      'firstCurrencyPrecision': instance.firstCurrencyPrecision,
+      'name_fa': instance.nameFa,
+      'price_precision': instance.pricePrecision,
+      'first_currency_precision': instance.firstCurrencyPrecision,
       'price': instance.price,
-      'changePercent': instance.changePercent,
+      'change_percent': instance.changePercent,
       'volume': instance.volume,
-      'usdtVolume': instance.usdtVolume,
+      'usdt_volume': instance.usdtVolume,
       'leverage': instance.leverage,
-      'spotGridBotActive': instance.spotGridBotActive,
+      'spot_grid_bot_active': instance.spotGridBotActive,
     };

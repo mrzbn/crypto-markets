@@ -16,7 +16,7 @@ class MarketListItemUiModelMapper
           price: object.priceInUsdt, decimalDigitsCount: 2, unit: "USDT"),
       secondaryPrice: PriceModel(
           price: object.priceInUsdt, decimalDigitsCount: 1, unit: "تومان"),
-      changePercentage: object.changePercent,
+      changePercentage: double.parse(object.changePercent),
       isFavorite: false,
       isFavorable: false,
       margin: 1,

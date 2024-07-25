@@ -8,15 +8,16 @@ class MarketApiModel with _$MarketApiModel {
   const factory MarketApiModel({
     required int id,
     required String symbol,
-    required String nameFa,
-    required int pricePrecision,
+    @JsonKey(name: 'name_fa') required String nameFa,
+    @JsonKey(name: 'price_precision') required int pricePrecision,
+    @JsonKey(name: 'first_currency_precision')
     required int firstCurrencyPrecision,
     required String price,
-    required String changePercent,
+    @JsonKey(name: 'change_percent') required String changePercent,
     required String volume,
-    required String usdtVolume,
-    required String leverage,
-    required bool spotGridBotActive,
+    @JsonKey(name: 'usdt_volume') required String usdtVolume,
+    required Object leverage,
+    @JsonKey(name: 'spot_grid_bot_active') required bool spotGridBotActive,
   }) = _MarketApiModel;
 
   factory MarketApiModel.fromJson(Map<String, Object?> json) =>

@@ -21,23 +21,36 @@ CurrencyApiModel _$CurrencyApiModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$CurrencyApiModel {
   int get id => throw _privateConstructorUsedError;
+
   String get name => throw _privateConstructorUsedError;
+
+  @JsonKey(name: 'name_fa')
   String get nameFa => throw _privateConstructorUsedError;
+
   String get created => throw _privateConstructorUsedError;
+
   String get symbol => throw _privateConstructorUsedError;
 
+  @JsonKey(name: 'price_in_usdt')
   Decimal get priceInUsdt => throw _privateConstructorUsedError;
 
+  @JsonKey(name: 'is_swappable')
   bool get isSwappable => throw _privateConstructorUsedError;
 
-  double get changePercent => throw _privateConstructorUsedError;
+  @JsonKey(name: 'change_percent')
+  String get changePercent => throw _privateConstructorUsedError;
 
   String get volume => throw _privateConstructorUsedError;
+
+  @JsonKey(name: 'usdt_volume')
   String get usdtVolume => throw _privateConstructorUsedError;
+
   List<MarketApiModel> get markets => throw _privateConstructorUsedError;
+
   bool get dexable => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $CurrencyApiModelCopyWith<CurrencyApiModel> get copyWith =>
       throw _privateConstructorUsedError;
@@ -52,14 +65,14 @@ abstract class $CurrencyApiModelCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      String nameFa,
+      @JsonKey(name: 'name_fa') String nameFa,
       String created,
       String symbol,
-      Decimal priceInUsdt,
-      bool isSwappable,
-      double changePercent,
+      @JsonKey(name: 'price_in_usdt') Decimal priceInUsdt,
+      @JsonKey(name: 'is_swappable') bool isSwappable,
+      @JsonKey(name: 'change_percent') String changePercent,
       String volume,
-      String usdtVolume,
+      @JsonKey(name: 'usdt_volume') String usdtVolume,
       List<MarketApiModel> markets,
       bool dexable});
 }
@@ -122,7 +135,7 @@ class _$CurrencyApiModelCopyWithImpl<$Res, $Val extends CurrencyApiModel>
       changePercent: null == changePercent
           ? _value.changePercent
           : changePercent // ignore: cast_nullable_to_non_nullable
-              as double,
+              as String,
       volume: null == volume
           ? _value.volume
           : volume // ignore: cast_nullable_to_non_nullable
@@ -154,14 +167,14 @@ abstract class _$$CurrencyApiModelImplCopyWith<$Res>
   $Res call(
       {int id,
       String name,
-      String nameFa,
+      @JsonKey(name: 'name_fa') String nameFa,
       String created,
       String symbol,
-      Decimal priceInUsdt,
-      bool isSwappable,
-      double changePercent,
+      @JsonKey(name: 'price_in_usdt') Decimal priceInUsdt,
+      @JsonKey(name: 'is_swappable') bool isSwappable,
+      @JsonKey(name: 'change_percent') String changePercent,
       String volume,
-      String usdtVolume,
+      @JsonKey(name: 'usdt_volume') String usdtVolume,
       List<MarketApiModel> markets,
       bool dexable});
 }
@@ -222,7 +235,7 @@ class __$$CurrencyApiModelImplCopyWithImpl<$Res>
       changePercent: null == changePercent
           ? _value.changePercent
           : changePercent // ignore: cast_nullable_to_non_nullable
-              as double,
+              as String,
       volume: null == volume
           ? _value.volume
           : volume // ignore: cast_nullable_to_non_nullable
@@ -249,14 +262,14 @@ class _$CurrencyApiModelImpl implements _CurrencyApiModel {
   const _$CurrencyApiModelImpl(
       {required this.id,
       required this.name,
-      required this.nameFa,
+      @JsonKey(name: 'name_fa') required this.nameFa,
       required this.created,
       required this.symbol,
-      required this.priceInUsdt,
-      required this.isSwappable,
-      required this.changePercent,
+      @JsonKey(name: 'price_in_usdt') required this.priceInUsdt,
+      @JsonKey(name: 'is_swappable') required this.isSwappable,
+      @JsonKey(name: 'change_percent') required this.changePercent,
       required this.volume,
-      required this.usdtVolume,
+      @JsonKey(name: 'usdt_volume') required this.usdtVolume,
       required final List<MarketApiModel> markets,
       required this.dexable})
       : _markets = markets;
@@ -269,20 +282,25 @@ class _$CurrencyApiModelImpl implements _CurrencyApiModel {
   @override
   final String name;
   @override
+  @JsonKey(name: 'name_fa')
   final String nameFa;
   @override
   final String created;
   @override
   final String symbol;
   @override
+  @JsonKey(name: 'price_in_usdt')
   final Decimal priceInUsdt;
   @override
+  @JsonKey(name: 'is_swappable')
   final bool isSwappable;
   @override
-  final double changePercent;
+  @JsonKey(name: 'change_percent')
+  final String changePercent;
   @override
   final String volume;
   @override
+  @JsonKey(name: 'usdt_volume')
   final String usdtVolume;
   final List<MarketApiModel> _markets;
 
@@ -360,14 +378,14 @@ abstract class _CurrencyApiModel implements CurrencyApiModel {
   const factory _CurrencyApiModel(
       {required final int id,
       required final String name,
-      required final String nameFa,
+      @JsonKey(name: 'name_fa') required final String nameFa,
       required final String created,
       required final String symbol,
-      required final Decimal priceInUsdt,
-      required final bool isSwappable,
-      required final double changePercent,
+      @JsonKey(name: 'price_in_usdt') required final Decimal priceInUsdt,
+      @JsonKey(name: 'is_swappable') required final bool isSwappable,
+      @JsonKey(name: 'change_percent') required final String changePercent,
       required final String volume,
-      required final String usdtVolume,
+      @JsonKey(name: 'usdt_volume') required final String usdtVolume,
       required final List<MarketApiModel> markets,
       required final bool dexable}) = _$CurrencyApiModelImpl;
 
@@ -378,26 +396,32 @@ abstract class _CurrencyApiModel implements CurrencyApiModel {
   int get id;
   @override
   String get name;
+
   @override
+  @JsonKey(name: 'name_fa')
   String get nameFa;
   @override
   String get created;
-
   @override
   String get symbol;
 
   @override
+  @JsonKey(name: 'price_in_usdt')
   Decimal get priceInUsdt;
 
   @override
+  @JsonKey(name: 'is_swappable')
   bool get isSwappable;
 
   @override
-  double get changePercent;
+  @JsonKey(name: 'change_percent')
+  String get changePercent;
 
   @override
   String get volume;
+
   @override
+  @JsonKey(name: 'usdt_volume')
   String get usdtVolume;
   @override
   List<MarketApiModel> get markets;
