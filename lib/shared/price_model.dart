@@ -1,11 +1,14 @@
 import 'package:decimal/decimal.dart';
 import 'package:decimal/intl.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:intl/intl.dart';
 
-class PriceModel {
-  final Decimal price;
-  final int decimalDigitsCount;
-  final String unit;
+part 'price_model.freezed.dart';
+part 'price_model.g.dart';
+
+@freezed
+class PriceModel with _$PriceModel {
+  const PriceModel._();
 
   String formatWithCommas() {
     final formatter = DecimalFormatter(
@@ -17,8 +20,12 @@ class PriceModel {
     return formatter.format(price);
   }
 
-  PriceModel(
-      {required this.price,
-      required this.decimalDigitsCount,
-      required this.unit});
+  const factory PriceModel({
+    required Decimal price,
+    required int decimalDigitsCount,
+    required String unit,
+  }) = _PriceModel;
+
+  factory PriceModel.fromJson(Map<String, Object?> json) =>
+      _$PriceModelFromJson(json);
 }
