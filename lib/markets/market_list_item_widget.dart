@@ -64,10 +64,14 @@ class MarketListItemWidget extends StatelessWidget {
             ),
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: Image.network(
-              model.iconUrl,
-              height: 24,
+            child: Container(
               width: 24,
+              height: 24,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.black12,
+              ),
+              child: Image.network(model.iconUrl),
             ),
           ),
           const SizedBox(
