@@ -33,7 +33,7 @@ class _MarketsScreenState extends State<MarketsScreen> {
                 ),
               AsyncError(:final error, :final stackTrace) =>
                 Text("${error.toString()}\n${stackTrace.toString()}"),
-              _ => const CircularProgressIndicator(),
+              _ => const CircularProgressIndicator(color: Colors.amber),
             },
           ),
         ),
