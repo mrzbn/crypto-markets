@@ -12,7 +12,7 @@ part "market_list_provider.g.dart";
 Future<List<MarketListItemUiModel>> marketsList(MarketsListRef ref) async {
   final url = Uri.https("api-web.tabdeal.org", "/r/plots/currency_prices/");
   final response = await http.get(url);
-  final jsonList = jsonDecode(response.body) as List;
+  final jsonList = jsonDecode(utf8.decode(response.bodyBytes)) as List;
   final mapper = MarketListItemUiModelMapper();
   return jsonList
       .map((e) => CurrencyApiModel.fromJson(e))

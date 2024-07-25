@@ -22,7 +22,10 @@ class _MarketsScreenState extends State<MarketsScreen> {
         child: Scaffold(
           body: Center(
             child: switch (marketsList) {
-              AsyncData(:final value) => ListView.builder(
+              AsyncData(:final value) => ListView.separated(
+                  separatorBuilder: (BuildContext context, int index) {
+                    return const SizedBox(height: 20);
+                  },
                   itemCount: value.length,
                   itemBuilder: (c, index) {
                     return MarketListItemWidget(model: value[index]);
