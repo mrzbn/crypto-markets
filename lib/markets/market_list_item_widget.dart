@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:crypto_markets/markets/market_list_item_ui_model.dart';
 import 'package:flutter/material.dart';
 
@@ -64,14 +65,26 @@ class MarketListItemWidget extends StatelessWidget {
             ),
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: Container(
+            child: CachedNetworkImage(
+              imageUrl: model.iconUrl,
               width: 24,
               height: 24,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.black12,
+              placeholder: (context, url) => Container(
+                width: 24,
+                height: 24,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black12,
+                ),
               ),
-              child: Image.network(model.iconUrl),
+              errorWidget: (context, url, error) => Container(
+                width: 24,
+                height: 24,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.red,
+                ),
+              ),
             ),
           ),
           const SizedBox(
