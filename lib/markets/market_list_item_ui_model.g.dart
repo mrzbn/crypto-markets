@@ -1,14 +1,14 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'market_list_item_model.dart';
+part of 'market_list_item_ui_model.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$MarketListItemModelImpl _$$MarketListItemModelImplFromJson(
+_$MarketListItemUiModelImpl _$$MarketListItemUiModelImplFromJson(
         Map<String, dynamic> json) =>
-    _$MarketListItemModelImpl(
+    _$MarketListItemUiModelImpl(
       iconUrl: json['iconUrl'] as String,
       primaryName: json['primaryName'] as String,
       secondaryName: json['secondaryName'] as String,
@@ -22,8 +22,8 @@ _$MarketListItemModelImpl _$$MarketListItemModelImplFromJson(
       margin: (json['margin'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$$MarketListItemModelImplToJson(
-        _$MarketListItemModelImpl instance) =>
+Map<String, dynamic> _$$MarketListItemUiModelImplToJson(
+        _$MarketListItemUiModelImpl instance) =>
     <String, dynamic>{
       'iconUrl': instance.iconUrl,
       'primaryName': instance.primaryName,

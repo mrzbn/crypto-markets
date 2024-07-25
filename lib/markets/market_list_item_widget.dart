@@ -1,10 +1,10 @@
-import 'package:crypto_markets/markets/market_list_item_model.dart';
+import 'package:crypto_markets/markets/market_list_item_ui_model.dart';
 import 'package:flutter/material.dart';
 
 class MarketListItemWidget extends StatelessWidget {
   const MarketListItemWidget({super.key, required this.model});
 
-  final MarketListItemModel model;
+  final MarketListItemUiModel model;
 
   String _getFormattedChangePercentage() {
     String changePercentageSign;

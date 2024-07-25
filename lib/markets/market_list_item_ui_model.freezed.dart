@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'market_list_item_model.dart';
+part of 'market_list_item_ui_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,12 +14,13 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-MarketListItemModel _$MarketListItemModelFromJson(Map<String, dynamic> json) {
-  return _MarketListItemModel.fromJson(json);
+MarketListItemUiModel _$MarketListItemUiModelFromJson(
+    Map<String, dynamic> json) {
+  return _MarketListItemUiModel.fromJson(json);
 }
 
 /// @nodoc
-mixin _$MarketListItemModel {
+mixin _$MarketListItemUiModel {
   String get iconUrl => throw _privateConstructorUsedError;
 
   String get primaryName => throw _privateConstructorUsedError;
@@ -41,15 +42,15 @@ mixin _$MarketListItemModel {
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $MarketListItemModelCopyWith<MarketListItemModel> get copyWith =>
+  $MarketListItemUiModelCopyWith<MarketListItemUiModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MarketListItemModelCopyWith<$Res> {
-  factory $MarketListItemModelCopyWith(
-          MarketListItemModel value, $Res Function(MarketListItemModel) then) =
-      _$MarketListItemModelCopyWithImpl<$Res, MarketListItemModel>;
+abstract class $MarketListItemUiModelCopyWith<$Res> {
+  factory $MarketListItemUiModelCopyWith(MarketListItemUiModel value,
+          $Res Function(MarketListItemUiModel) then) =
+      _$MarketListItemUiModelCopyWithImpl<$Res, MarketListItemUiModel>;
 
   @useResult
   $Res call(
@@ -69,9 +70,10 @@ abstract class $MarketListItemModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MarketListItemModelCopyWithImpl<$Res, $Val extends MarketListItemModel>
-    implements $MarketListItemModelCopyWith<$Res> {
-  _$MarketListItemModelCopyWithImpl(this._value, this._then);
+class _$MarketListItemUiModelCopyWithImpl<$Res,
+        $Val extends MarketListItemUiModel>
+    implements $MarketListItemUiModelCopyWith<$Res> {
+  _$MarketListItemUiModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -150,11 +152,12 @@ class _$MarketListItemModelCopyWithImpl<$Res, $Val extends MarketListItemModel>
 }
 
 /// @nodoc
-abstract class _$$MarketListItemModelImplCopyWith<$Res>
-    implements $MarketListItemModelCopyWith<$Res> {
-  factory _$$MarketListItemModelImplCopyWith(_$MarketListItemModelImpl value,
-          $Res Function(_$MarketListItemModelImpl) then) =
-      __$$MarketListItemModelImplCopyWithImpl<$Res>;
+abstract class _$$MarketListItemUiModelImplCopyWith<$Res>
+    implements $MarketListItemUiModelCopyWith<$Res> {
+  factory _$$MarketListItemUiModelImplCopyWith(
+          _$MarketListItemUiModelImpl value,
+          $Res Function(_$MarketListItemUiModelImpl) then) =
+      __$$MarketListItemUiModelImplCopyWithImpl<$Res>;
 
   @override
   @useResult
@@ -177,11 +180,12 @@ abstract class _$$MarketListItemModelImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$MarketListItemModelImplCopyWithImpl<$Res>
-    extends _$MarketListItemModelCopyWithImpl<$Res, _$MarketListItemModelImpl>
-    implements _$$MarketListItemModelImplCopyWith<$Res> {
-  __$$MarketListItemModelImplCopyWithImpl(_$MarketListItemModelImpl _value,
-      $Res Function(_$MarketListItemModelImpl) _then)
+class __$$MarketListItemUiModelImplCopyWithImpl<$Res>
+    extends _$MarketListItemUiModelCopyWithImpl<$Res,
+        _$MarketListItemUiModelImpl>
+    implements _$$MarketListItemUiModelImplCopyWith<$Res> {
+  __$$MarketListItemUiModelImplCopyWithImpl(_$MarketListItemUiModelImpl _value,
+      $Res Function(_$MarketListItemUiModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -197,7 +201,7 @@ class __$$MarketListItemModelImplCopyWithImpl<$Res>
     Object? isFavorable = null,
     Object? margin = null,
   }) {
-    return _then(_$MarketListItemModelImpl(
+    return _then(_$MarketListItemUiModelImpl(
       iconUrl: null == iconUrl
           ? _value.iconUrl
           : iconUrl // ignore: cast_nullable_to_non_nullable
@@ -240,8 +244,8 @@ class __$$MarketListItemModelImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$MarketListItemModelImpl implements _MarketListItemModel {
-  const _$MarketListItemModelImpl(
+class _$MarketListItemUiModelImpl implements _MarketListItemUiModel {
+  const _$MarketListItemUiModelImpl(
       {required this.iconUrl,
       required this.primaryName,
       required this.secondaryName,
@@ -252,8 +256,8 @@ class _$MarketListItemModelImpl implements _MarketListItemModel {
       required this.isFavorable,
       required this.margin});
 
-  factory _$MarketListItemModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$MarketListItemModelImplFromJson(json);
+  factory _$MarketListItemUiModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MarketListItemUiModelImplFromJson(json);
 
   @override
   final String iconUrl;
@@ -276,14 +280,14 @@ class _$MarketListItemModelImpl implements _MarketListItemModel {
 
   @override
   String toString() {
-    return 'MarketListItemModel(iconUrl: $iconUrl, primaryName: $primaryName, secondaryName: $secondaryName, primaryPrice: $primaryPrice, secondaryPrice: $secondaryPrice, changePercentage: $changePercentage, isFavorite: $isFavorite, isFavorable: $isFavorable, margin: $margin)';
+    return 'MarketListItemUiModel(iconUrl: $iconUrl, primaryName: $primaryName, secondaryName: $secondaryName, primaryPrice: $primaryPrice, secondaryPrice: $secondaryPrice, changePercentage: $changePercentage, isFavorite: $isFavorite, isFavorable: $isFavorable, margin: $margin)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$MarketListItemModelImpl &&
+            other is _$MarketListItemUiModelImpl &&
             (identical(other.iconUrl, iconUrl) || other.iconUrl == iconUrl) &&
             (identical(other.primaryName, primaryName) ||
                 other.primaryName == primaryName) &&
@@ -319,20 +323,20 @@ class _$MarketListItemModelImpl implements _MarketListItemModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$MarketListItemModelImplCopyWith<_$MarketListItemModelImpl> get copyWith =>
-      __$$MarketListItemModelImplCopyWithImpl<_$MarketListItemModelImpl>(
-          this, _$identity);
+  _$$MarketListItemUiModelImplCopyWith<_$MarketListItemUiModelImpl>
+      get copyWith => __$$MarketListItemUiModelImplCopyWithImpl<
+          _$MarketListItemUiModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$MarketListItemModelImplToJson(
+    return _$$MarketListItemUiModelImplToJson(
       this,
     );
   }
 }
 
-abstract class _MarketListItemModel implements MarketListItemModel {
-  const factory _MarketListItemModel(
+abstract class _MarketListItemUiModel implements MarketListItemUiModel {
+  const factory _MarketListItemUiModel(
       {required final String iconUrl,
       required final String primaryName,
       required final String secondaryName,
@@ -341,10 +345,10 @@ abstract class _MarketListItemModel implements MarketListItemModel {
       required final double changePercentage,
       required final bool isFavorite,
       required final bool isFavorable,
-      required final double margin}) = _$MarketListItemModelImpl;
+      required final double margin}) = _$MarketListItemUiModelImpl;
 
-  factory _MarketListItemModel.fromJson(Map<String, dynamic> json) =
-      _$MarketListItemModelImpl.fromJson;
+  factory _MarketListItemUiModel.fromJson(Map<String, dynamic> json) =
+      _$MarketListItemUiModelImpl.fromJson;
 
   @override
   String get iconUrl;
@@ -375,6 +379,6 @@ abstract class _MarketListItemModel implements MarketListItemModel {
 
   @override
   @JsonKey(ignore: true)
-  _$$MarketListItemModelImplCopyWith<_$MarketListItemModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$MarketListItemUiModelImplCopyWith<_$MarketListItemUiModelImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
