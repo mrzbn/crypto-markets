@@ -24,30 +24,21 @@ mixin _$MarketApiModel {
   String get symbol => throw _privateConstructorUsedError;
   @JsonKey(name: 'name_fa')
   String get nameFa => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'price_precision')
   int get pricePrecision => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'first_currency_precision')
   int get firstCurrencyPrecision => throw _privateConstructorUsedError;
-
   String get price => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'change_percent')
   String get changePercent => throw _privateConstructorUsedError;
-
   String get volume => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'usdt_volume')
   String get usdtVolume => throw _privateConstructorUsedError;
-
   Object get leverage => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'spot_grid_bot_active')
   bool get spotGridBotActive => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
   @JsonKey(ignore: true)
   $MarketApiModelCopyWith<MarketApiModel> get copyWith =>
       throw _privateConstructorUsedError;
@@ -58,7 +49,6 @@ abstract class $MarketApiModelCopyWith<$Res> {
   factory $MarketApiModelCopyWith(
           MarketApiModel value, $Res Function(MarketApiModel) then) =
       _$MarketApiModelCopyWithImpl<$Res, MarketApiModel>;
-
   @useResult
   $Res call(
       {int id,
@@ -367,34 +357,27 @@ abstract class _MarketApiModel implements MarketApiModel {
   int get id;
   @override
   String get symbol;
-
   @override
   @JsonKey(name: 'name_fa')
   String get nameFa;
-
   @override
   @JsonKey(name: 'price_precision')
   int get pricePrecision;
-
   @override
   @JsonKey(name: 'first_currency_precision')
   int get firstCurrencyPrecision;
   @override
   String get price;
-
   @override
   @JsonKey(name: 'change_percent')
   String get changePercent;
   @override
   String get volume;
-
   @override
   @JsonKey(name: 'usdt_volume')
   String get usdtVolume;
-
   @override
   Object get leverage;
-
   @override
   @JsonKey(name: 'spot_grid_bot_active')
   bool get spotGridBotActive;

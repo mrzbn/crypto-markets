@@ -21,13 +21,10 @@ PriceModel _$PriceModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$PriceModel {
   Decimal get price => throw _privateConstructorUsedError;
-
   int get decimalDigitsCount => throw _privateConstructorUsedError;
-
   String get unit => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
   @JsonKey(ignore: true)
   $PriceModelCopyWith<PriceModel> get copyWith =>
       throw _privateConstructorUsedError;
@@ -38,7 +35,6 @@ abstract class $PriceModelCopyWith<$Res> {
   factory $PriceModelCopyWith(
           PriceModel value, $Res Function(PriceModel) then) =
       _$PriceModelCopyWithImpl<$Res, PriceModel>;
-
   @useResult
   $Res call({Decimal price, int decimalDigitsCount, String unit});
 }
@@ -50,7 +46,6 @@ class _$PriceModelCopyWithImpl<$Res, $Val extends PriceModel>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -84,7 +79,6 @@ abstract class _$$PriceModelImplCopyWith<$Res>
   factory _$$PriceModelImplCopyWith(
           _$PriceModelImpl value, $Res Function(_$PriceModelImpl) then) =
       __$$PriceModelImplCopyWithImpl<$Res>;
-
   @override
   @useResult
   $Res call({Decimal price, int decimalDigitsCount, String unit});
@@ -180,7 +174,6 @@ abstract class _PriceModel extends PriceModel {
       {required final Decimal price,
       required final int decimalDigitsCount,
       required final String unit}) = _$PriceModelImpl;
-
   const _PriceModel._() : super._();
 
   factory _PriceModel.fromJson(Map<String, dynamic> json) =
@@ -188,13 +181,10 @@ abstract class _PriceModel extends PriceModel {
 
   @override
   Decimal get price;
-
   @override
   int get decimalDigitsCount;
-
   @override
   String get unit;
-
   @override
   @JsonKey(ignore: true)
   _$$PriceModelImplCopyWith<_$PriceModelImpl> get copyWith =>

@@ -1,4 +1,4 @@
-import 'package:crypto_markets/markets/market_list_item_ui_model.dart';
+import 'package:crypto_markets/markets/list/market_list_item_ui_model.dart';
 import 'package:crypto_markets/shared/Mapper.dart';
 import 'package:crypto_markets/shared/currency_api_model.dart';
 import 'package:crypto_markets/shared/price_model.dart';

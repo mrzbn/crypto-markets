@@ -21,36 +21,24 @@ CurrencyApiModel _$CurrencyApiModelFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$CurrencyApiModel {
   int get id => throw _privateConstructorUsedError;
-
   String get name => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'name_fa')
   String get nameFa => throw _privateConstructorUsedError;
-
   String get created => throw _privateConstructorUsedError;
-
   String get symbol => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'price_in_usdt')
   Decimal get priceInUsdt => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'is_swappable')
   bool get isSwappable => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'change_percent')
   String get changePercent => throw _privateConstructorUsedError;
-
   String get volume => throw _privateConstructorUsedError;
-
   @JsonKey(name: 'usdt_volume')
   String get usdtVolume => throw _privateConstructorUsedError;
-
   List<MarketApiModel> get markets => throw _privateConstructorUsedError;
-
   bool get dexable => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
   @JsonKey(ignore: true)
   $CurrencyApiModelCopyWith<CurrencyApiModel> get copyWith =>
       throw _privateConstructorUsedError;
@@ -303,7 +291,6 @@ class _$CurrencyApiModelImpl implements _CurrencyApiModel {
   @JsonKey(name: 'usdt_volume')
   final String usdtVolume;
   final List<MarketApiModel> _markets;
-
   @override
   List<MarketApiModel> get markets {
     if (_markets is EqualUnmodifiableListView) return _markets;
@@ -396,7 +383,6 @@ abstract class _CurrencyApiModel implements CurrencyApiModel {
   int get id;
   @override
   String get name;
-
   @override
   @JsonKey(name: 'name_fa')
   String get nameFa;
@@ -404,22 +390,17 @@ abstract class _CurrencyApiModel implements CurrencyApiModel {
   String get created;
   @override
   String get symbol;
-
   @override
   @JsonKey(name: 'price_in_usdt')
   Decimal get priceInUsdt;
-
   @override
   @JsonKey(name: 'is_swappable')
   bool get isSwappable;
-
   @override
   @JsonKey(name: 'change_percent')
   String get changePercent;
-
   @override
   String get volume;
-
   @override
   @JsonKey(name: 'usdt_volume')
   String get usdtVolume;

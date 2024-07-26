@@ -1,8 +1,9 @@
-import 'package:crypto_markets/markets/market_list_item_ui_model.dart';
-import 'package:crypto_markets/markets/market_list_item_widget.dart';
-import 'package:crypto_markets/markets/market_list_provider.dart';
+import 'package:crypto_markets/markets/list/market_list_item_ui_model.dart';
+import 'package:crypto_markets/markets/list/market_list_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'list/market_list_item_widget.dart';
 
 class MarketsScreen extends ConsumerStatefulWidget {
   const MarketsScreen({super.key});
